@@ -1,0 +1,18 @@
+{
+  "disallowTrailingWhitespace": true,
+  "maximumLineLength": 120,
+  "preset": "google",
+  "maxErrors": -1,
+  "validateIndentation": 4,
+  "requireCamelCaseOrUpperCaseIdentifiers": {
+    "ignoreProperties": true
+  },
+  "jsDoc": {
+    "checkAnnotations": {
+      "preset": "jsdoc3",
+      "extra": {
+        "route": true
+      }
+    }
+  }
+}
