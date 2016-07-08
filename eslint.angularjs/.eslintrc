@@ -30,6 +30,10 @@
                 "SwitchCase": 1
             }
         ],
+    "curly": [
+      "error",
+      "all"
+    ],
         "no-implicit-coercion": [
             "error",
             {
