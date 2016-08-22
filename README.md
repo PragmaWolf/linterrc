@@ -1,2 +1,2 @@
 # linterrc
-Collection for linters rules config
+Collection of my personal linters rules config (ESLint, JSCS, JSHint)
