@@ -1,4 +1,10 @@
 {
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "impliedStrict": true
+        }
+    },
     "extends": [
         "google",
         "angular"
@@ -6,14 +12,9 @@
     "env": {
         "browser": true,
         "es6": true,
-        "jquery": true,
-        "shared-node-browser": true,
-        "worker": true,
-        "meteor": true,
-        "mocha": true
+        "jquery": true
     },
     "plugins": [
-        "tdd",
         "angular"
     ],
     "globals": {
@@ -23,6 +24,23 @@
         "ChartColors": true
     },
     "rules": {
+        "camelcase": [
+            "error",
+            {
+                "properties": "always"
+            }
+        ],
+        "curly": [
+            "error",
+            "all"
+        ],
+        "generator-star-spacing": [
+            "error",
+            "before"
+        ],
+        "guard-for-in": [
+            "error"
+        ],
         "indent": [
             "error",
             4,
@@ -30,30 +48,11 @@
                 "SwitchCase": 1
             }
         ],
-    "curly": [
-      "error",
-      "all"
-    ],
-        "no-implicit-coercion": [
+        "key-spacing": [
             "error",
             {
-                "boolean": false,
-                "number": false,
-                "string": false
+                "mode": "minimum"
             }
-        ],
-        "space-before-function-paren": [
-            "error",
-            "never"
-        ],
-        "valid-jsdoc": [
-            "error",
-            {
-                "requireReturn": false
-            }
-        ],
-        "require-jsdoc": [
-            "warn"
         ],
         "max-len": [
             "error",
@@ -65,11 +64,37 @@
                 "ignoreTrailingComments": true
             }
         ],
-        "guard-for-in": [
-            "error"
+        "new-cap": [
+            "error",
+            {
+                "properties": false
+            }
+        ],
+        "no-extra-boolean-cast": [
+            "off"
+        ],
+        "no-floating-decimal": [
+            "off"
+        ],
+        "no-implicit-coercion": [
+            "error",
+            {
+                "boolean": false,
+                "number": false,
+                "string": false
+            }
         ],
         "no-trailing-spaces": [
-            "warn"
+            "warn",
+            {
+                "skipBlankLines": true
+            }
+        ],
+        "no-unused-vars": [
+            "error",
+            {
+                "args": "none"
+            }
         ],
         "quotes": [
             "error",
@@ -78,27 +103,29 @@
                 "allowTemplateLiterals": true
             }
         ],
-        "new-cap": [
-            "error"
-        ],
-        "key-spacing": [
+        "quote-props": [
             "error",
+            "as-needed"
+        ],
+        "require-jsdoc": [
+            "warn",
             {
-                "mode": "minimum"
+                "require": {
+                    "FunctionDeclaration": true,
+                    "MethodDefinition": true,
+                    "ClassDeclaration": true
+                }
             }
         ],
-        "generator-star-spacing": [
+        "space-before-function-paren": [
             "error",
-            "before"
+            "never"
         ],
-        "camelcase": [
+        "valid-jsdoc": [
             "error",
             {
-                "properties": "always"
+                "requireReturn": false
             }
-        ],
-        "tdd/assert-enforce-boolean": [
-            "warn"
         ],
         "angular/no-service-method": [
             "off"
