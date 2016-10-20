@@ -15,12 +15,23 @@
   "plugins": [
   ],
   "rules": {
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
     "camelcase": [
       "error",
       {
         "properties": "always"
       }
     ],
+    "comma-dangle": ["error", {
+      "arrays": "ignore",
+      "objects": "ignore",
+      "imports": "ignore",
+      "exports": "ignore",
+      "functions": "ignore"
+    }],
     "curly": [
       "error",
       "all"
