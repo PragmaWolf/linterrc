@@ -48,6 +48,10 @@
       "error",
       "all"
     ],
+    "eqeqeq": [
+      "error",
+      "always"
+    ],
     "generator-star-spacing": [
       "error",
       "before"
@@ -84,6 +88,9 @@
         "properties": false
       }
     ],
+    "no-else-return": [
+      "error"
+    ],
     "no-extra-boolean-cast": [
       "off"
     ],
@@ -107,11 +114,17 @@
         "skipBlankLines": true
       }
     ],
+    "no-undefined": [
+      "error"
+    ],
     "no-unused-vars": [
       "error",
       {
         "args": "none"
       }
+    ],
+    "no-useless-return": [
+      "error"
     ],
     "no-var": [
       "warn"
