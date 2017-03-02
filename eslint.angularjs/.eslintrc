@@ -1,6 +1,6 @@
 {
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 8,
     "ecmaFeatures": {
       "impliedStrict": true
     }
@@ -35,11 +35,11 @@
       }
     ],
     "comma-dangle": ["error", {
-      "arrays": "ignore",
-      "objects": "ignore",
-      "imports": "ignore",
-      "exports": "ignore",
-      "functions": "ignore"
+      "arrays": "error",
+      "objects": "error",
+      "imports": "error",
+      "exports": "error",
+      "functions": "error"
     }],
     "curly": [
       "error",
@@ -95,6 +95,9 @@
         "string": false
       }
     ],
+    "no-invalid-this": [
+      "warn"
+    ],
     "no-trailing-spaces": [
       "warn",
       {
@@ -106,6 +109,9 @@
       {
         "args": "none"
       }
+    ],
+    "no-var": [
+      "warn"
     ],
     "quotes": [
       "error",
@@ -137,6 +143,9 @@
       {
         "requireReturn": false
       }
+    ],
+    "linebreak-style": [
+        "unix"
     ],
     "angular/no-service-method": [
       "off"
