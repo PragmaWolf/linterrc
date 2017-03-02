@@ -25,13 +25,16 @@
         "properties": "always"
       }
     ],
-    "comma-dangle": ["error", {
-      "arrays": "error",
-      "objects": "error",
-      "imports": "error",
-      "exports": "error",
-      "functions": "error"
-    }],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "never",
+        "objects": "never",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }
+    ],
     "curly": [
       "error",
       "all"
@@ -136,7 +139,8 @@
       }
     ],
     "linebreak-style": [
-        "unix"
+      "error",
+      "unix"
     ]
   }
 }
