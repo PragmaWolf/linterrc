@@ -72,6 +72,10 @@
         "mode": "minimum"
       }
     ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
     "max-len": [
       "error",
       120,
@@ -159,10 +163,6 @@
       {
         "requireReturn": false
       }
-    ],
-    "linebreak-style": [
-      "error",
-      "unix"
     ],
     "angular/no-service-method": [
       "off"
