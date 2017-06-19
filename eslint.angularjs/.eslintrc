@@ -6,6 +6,7 @@
     }
   },
   "extends": [
+    "eslint:recommended",
     "google",
     "angular"
   ],
@@ -92,6 +93,9 @@
         "properties": false
       }
     ],
+    "no-console": [
+      "off"
+    ],
     "no-else-return": [
       "error"
     ],
@@ -111,6 +115,9 @@
     ],
     "no-invalid-this": [
       "warn"
+    ],
+    "no-throw-literal": [
+      "off"
     ],
     "no-trailing-spaces": [
       "warn",
@@ -145,12 +152,13 @@
       "as-needed"
     ],
     "require-jsdoc": [
-      "warn",
+      "error",
       {
         "require": {
           "FunctionDeclaration": true,
           "MethodDefinition": true,
-          "ClassDeclaration": true
+          "ClassDeclaration": true,
+          "ArrowFunctionExpression": false
         }
       }
     ],
