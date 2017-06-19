@@ -1,0 +1,175 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "impliedStrict": true
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "google",
+    "vue"
+  ],
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "plugins": [
+    "node",
+    "promise",
+    "import",
+    "vue"
+  ],
+  "rules": {
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "camelcase": [
+      "error",
+      {
+        "properties": "always"
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "never",
+        "objects": "never",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }
+    ],
+    "eqeqeq": [
+      "error",
+      "always"
+    ],
+    "generator-star-spacing": [
+      "error",
+      "before"
+    ],
+    "guard-for-in": [
+      "error"
+    ],
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "key-spacing": [
+      "error",
+      {
+        "mode": "minimum"
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "max-len": [
+      "error",
+      120,
+      4,
+      {
+        "ignoreComments": true,
+        "ignoreUrls": true,
+        "ignoreTrailingComments": true
+      }
+    ],
+    "new-cap": [
+      "error",
+      {
+        "properties": false
+      }
+    ],
+    "no-else-return": [
+      "error"
+    ],
+    "no-extend-native": [
+      "off"
+    ],
+    "no-extra-boolean-cast": [
+      "off"
+    ],
+    "no-floating-decimal": [
+      "off"
+    ],
+    "no-implicit-coercion": [
+      "error",
+      {
+        "boolean": false,
+        "number": false,
+        "string": false
+      }
+    ],
+    "no-invalid-this": [
+      "warn"
+    ],
+    "no-trailing-spaces": [
+      "warn",
+      {
+        "skipBlankLines": true
+      }
+    ],
+    "no-undefined": [
+      "error"
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "none"
+      }
+    ],
+    "no-useless-return": [
+      "error"
+    ],
+    "no-var": [
+      "warn"
+    ],
+    "object-curly-spacing": [
+      "off"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "quote-props": [
+      "error",
+      "as-needed"
+    ],
+    "require-jsdoc": [
+      "error",
+      {
+        "require": {
+          "FunctionDeclaration": true,
+          "MethodDefinition": true,
+          "ClassDeclaration": true,
+          "ArrowFunctionExpression": false
+        }
+      }
+    ],
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "valid-jsdoc": [
+      "error",
+      {
+        "requireReturn": false
+      }
+    ]
+  }
+}
