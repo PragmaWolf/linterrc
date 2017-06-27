@@ -88,6 +88,9 @@
         "properties": false
       }
     ],
+    "no-console": [
+      "off"
+    ],
     "no-else-return": [
       "error"
     ],
